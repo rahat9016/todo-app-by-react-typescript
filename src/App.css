@@ -1,38 +1,58 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(240 240 240);
+}
+
+.navbar-container {
+  background-color: teal;
+  height: 80px;
+}
+
+/* Input Field  */
+.card-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+}
+.form {
+  width: 960px;
+  margin: 0 auto;
+}
+.form-filed input {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.contact-wrapper {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-input {
+  border: none;
+  outline: none;
+  padding: 8px 5px;
+  border-radius: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-name,
+.contact-email {
+  margin-bottom: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn {
+  background-color: rgb(43, 43, 255);
+  outline: none;
+  border: none;
+  padding: 12px 18px;
+  color: #fff;
+  border-radius: 4px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-trash-alt {
+  color: rgb(243, 48, 48);
 }
